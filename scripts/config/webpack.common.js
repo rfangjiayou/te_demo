@@ -17,27 +17,27 @@ const getCssLoaders = importLoaders => [
       sourceMap: isDev,
       importLoaders
     }
-  },
-  {
-    loader: 'postcss-loader',
-    options: {
-      postcssOptions: {
-        plugins: [
-          require('postcss-flexbugs-fixes'),
-          !isDev && [
-            'postcss-preset-env',
-            {
-              autoprefixer: {
-                grid: true,
-                flexbox: 'no-2009'
-              },
-              stage: 3
-            }
-          ]
-        ].filter(Boolean)
-      }
-    }
   }
+  // {
+  //   loader: 'postcss-loader',
+  //   options: {
+  //     postcssOptions: {
+  //       plugins: [
+  //         require('postcss-flexbugs-fixes'),
+  //         !isDev && [
+  //           'postcss-preset-env',
+  //           {
+  //             autoprefixer: {
+  //               grid: true,
+  //               flexbox: 'no-2009'
+  //             },
+  //             stage: 3
+  //           }
+  //         ]
+  //       ].filter(Boolean)
+  //     }
+  //   }
+  // }
 ]
 
 module.exports = {
