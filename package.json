@@ -11,6 +11,7 @@
     "lint-stylelint": "stylelint --config .stylelintrc.js src/**/*.{less,css,scss}",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "lint-staged": "lint-staged",
+    "commitlint": "commitlint --config .commitlintrc.js -e -V",
     "prepare": "husky install"
   },
   "repository": {
